@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>My Calc</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:400" rel="stylesheet">
+  <link rel="icon" href="image/calc.png">
+  
+</head>
+<body>
+    <div class="dark">
+        <h5>Night/Day</h5>
+    <label class="switch">
+        <input type="checkbox" onclick="myFunction()">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  <div class="calculator">
+        <div id="screen">
+            <span class="input"></span>
+            <span class="formula"></span>
+        </div>
+    <div id="buttons">
+      <div id="left-buttons">
+        <span class="button top-left" id="AC">AC</span>
+        <span class="button top-left" id="CE">CE</span>
+        <span class="button white" id="divide" onclick="symbolPress(' &divide; ')">&divide;</span>
+        <span class="button white" id="7" onclick="numPress('7')">7</span>
+        <span class="button white" id="8" onclick="numPress('8')">8</span>
+        <span class="button white" id="9" onclick="numPress('9')">9</span>
+        <span class="button white" id="4" onclick="numPress('4')">4</span>
+        <span class="button white" id="5" onclick="numPress('5')">5</span>
+        <span class="button white" id="6" onclick="numPress('6')">6</span>
+        <span class="button white" id="1" onclick="numPress('1')">1</span>
+        <span class="button white" id="2" onclick="numPress('2')">2</span>
+        <span class="button white" id="3" onclick="numPress('3')">3</span>
+        <span class="button white zero" id="0" onclick="numPress('0')">0</span>
+        <span class="button white dot" id="dot" onclick="numPress('.')">.</span>
+      </div>
+      <div id="right-buttons">
+        <span class="button white" id="multiply" onclick="symbolPress(' &times; ')">x</span>
+        <span class="button white" id="subtract" onclick="symbolPress(' &minus; ')">-</span>
+        <span class="button white" id="add" onclick="symbolPress(' + ')">+</span>
+        <span class="button white equals" id="equals">=</span>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
